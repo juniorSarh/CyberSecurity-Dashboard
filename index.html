@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nexus Cloud Shield: System Security Dashboard</title>
+  
+  <!-- External Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Sidenav -->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+  
+
+  <!-- Header -->
+  <header>
+    <img src="nexuslogo.png" alt="Nexus Cloud Shield Logo" class="logo"/>
+    <h1>Nexus Cloud Shield: System Security Dashboard</h1>
+  </header>
+  <span onclick="openNav()" class="openbtn">☰ open</span>
+
+  <!-- Dashboard Cards -->
+  <main class="dashboard-grid">
+
+    <!-- Existing Cards -->
+    <section class="card">
+      <h2> Nexus Overview</h2>
+      <p>Disaster recovery tools & system restoration readiness.</p>
+      <div class="metric">🟢 Status: Operational</div>
+      <ul>
+        <li>Boot Logs ✅</li>
+        <li>System Image Recovery 🟢</li>
+        <li>Startup Repair 🟡</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>🔁 Recovery</h2>
+      <p>Disaster recovery tools & system restoration readiness.</p>
+      <div class="metric">🟢 Status: Operational</div>
+      <ul>
+        <li>Boot Logs ✅</li>
+        <li>System Image Recovery 🟢</li>
+        <li>Startup Repair 🟡</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>☁️ Cloud Computing Status</h2>
+      <p>Current cloud service availability & risks.</p>
+      <div class="metric">🟢 99.98% Uptime</div>
+      <ul>
+        <li>Storage: 85% used 🟡</li>
+        <li>Online Apps: Stable 🟢</li>
+        <li>Latency: 30ms 🟢</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2> Users </h2>
+      <p>Disaster recovery tools & system restoration readiness.</p>
+      <div class="metric">🟢 Status: Operational</div>
+      <ul>
+        <li>Boot Logs ✅</li>
+        <li>System Image Recovery 🟢</li>
+        <li>Startup Repair 🟡</li>
+      </ul>
+    </section>
+
+    <!-- Graph Cards -->
+    <section class="Graph-Card">
+      <h2>Security Fundamentals</h2>
+      <div id="myPlot"></div>
+    </section>
+
+    <section class="Graph-Card">
+      <h2>Programming and Development</h2>
+      <div id="chart-container">
+        <canvas id="lineChart"></canvas>
+      </div>
+    </section>
+
+    <section class="Graph-Card">
+      <h2>Cloud Computing</h2>
+      <div id="myChart"></div>
+    </section>
+
+  </main>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>

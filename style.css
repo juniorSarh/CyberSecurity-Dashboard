@@ -33,7 +33,9 @@ h1 {
 .dashboard-grid {
   display: grid;
   gap: 10px;
+  padding-bottom: 25px;
   grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+
 }
 
 .card {
@@ -42,15 +44,24 @@ h1 {
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.05);
   transition: transform 0.2s, box-shadow 0.2s;
+  width: auto;
+}
+
+.Graph-grid {
+  display: grid;
+  gap: 10px;
+  width: 100%;
+  grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+
 }
 .Graph-Card  {
   background-color: #dadbe2;
   border-radius: 15px;
-  padding: 20px;
+  padding: 30px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.05);
   transition: transform 0.2s, box-shadow 0.2s;
-  height: 400px;;
-  width: 300px;
+  height: 400px;
+  width: 490px;
 }
 
 .card:hover {

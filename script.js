@@ -53,7 +53,7 @@ window.onload = function () {
   new Chart(ctx, {
     type: "line",
     data: {
-      labels: ["Internet", "Cloud Storage", "Support Infra", "Thu", "Fri", "Sat", "Sun"],
+      labels: ["Internet", "Cloud Storage", "Support Infra", "Game Project Pipieline", "IoT Device Connection", "Access Control", "Safe Mode Boot "],
       datasets: [
         {
           label: "Uptime (%)",

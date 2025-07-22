@@ -16,37 +16,37 @@ window.onload = function () {
   Plotly.newPlot("myPlot", barData, barLayout);
 
   // Google Charts
-  google.charts.load("current", { packages: ["corechart"] });
-  google.charts.setOnLoadCallback(drawGoogleChart);
+  // google.charts.load("current", { packages: ["corechart"] });
+  // google.charts.setOnLoadCallback(drawGoogleChart);
 
-  function drawGoogleChart() {
-    const data = google.visualization.arrayToDataTable([
-      ["Price", "Size"],
-      [50, 7],
-      [60, 8],
-      [70, 8],
-      [80, 9],
-      [90, 9],
-      [100, 9],
-      [110, 10],
-      [120, 11],
-      [130, 14],
-      [140, 14],
-      [150, 15],
-    ]);
+  // function drawGoogleChart() {
+  //   const data = google.visualization.arrayToDataTable([
+  //     ["Price", "Size"],
+  //     [50, 7],
+  //     [60, 8],
+  //     [70, 8],
+  //     [80, 9],
+  //     [90, 9],
+  //     [100, 9],
+  //     [110, 10],
+  //     [120, 11],
+  //     [130, 14],
+  //     [140, 14],
+  //     [150, 15],
+  //   ]);
 
-    const options = {
-      title: "Status on Cloud at a Runtime",
-      hAxis: { title: "Data" },
-      vAxis: { title: "status" },
-      legend: "none",
-    };
+  //   const options = {
+  //     title: "Status on Cloud at a Runtime",
+  //     hAxis: { title: "Data" },
+  //     vAxis: { title: "status" },
+  //     legend: "none",
+  //   };
 
-    const chart = new google.visualization.LineChart(
-      document.getElementById("myChart")
-    );
-    chart.draw(data, options);
-  }
+  //   const chart = new google.visualization.LineChart(
+  //     document.getElementById("myChart")
+  //   );
+  //   chart.draw(data, options);
+  // }
 
   // Chart.js Line Chart
   const ctx = document.getElementById("lineChart").getContext("2d");
@@ -79,6 +79,33 @@ window.onload = function () {
     },
   });
 };
+
+// pie chart
+google.charts.load("current", { packages: ["corechart"] });
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+  // Set Data
+  const data = google.visualization.arrayToDataTable([
+    ["Contry", "Mhl"],
+    ["Italy", 54.8],
+    ["France", 48.6],
+    ["Spain", 44.4],
+    ["USA", 23.9],
+    ["Argentina", 14.5],
+  ]);
+
+  // Set Options
+  const options = {
+    title: "Cloud Computing",
+  };
+
+  // Draw
+  const chart = new google.visualization.PieChart(
+    document.getElementById("myChart")
+  );
+  chart.draw(data, options);
+}
 
 // Sidenav controls
 function openNav() {

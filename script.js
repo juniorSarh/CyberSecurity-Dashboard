@@ -87,12 +87,12 @@ google.charts.setOnLoadCallback(drawChart);
 function drawChart() {
   // Set Data
   const data = google.visualization.arrayToDataTable([
-    ["Contry", "Mhl"],
-    ["Italy", 54.8],
-    ["France", 48.6],
-    ["Spain", 44.4],
-    ["USA", 23.9],
-    ["Argentina", 14.5],
+    ["Status", "Mhl"],
+    ["Network security status", 54.8],
+    ["Cloud storage status", 48.6],
+    ["Cloud benefits & risk", 44.4],
+    ["Online applications", 23.9],
+    ["config tools", 14.5],
   ]);
 
   // Set Options
